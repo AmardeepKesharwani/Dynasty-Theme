@@ -1,0 +1,263 @@
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.row {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+.col-6 {
+  -ms-flex: 0 0 50%;
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+.col-12 {
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+  .col-sm-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .col-sm-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+  .col-md-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .col-md-4 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+  .col-md-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+  .col-md-8 {
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+  }
+  .col-md-9 {
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 75%;
+  }
+  .col-md-12 {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+  .col-lg-3 {
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  .col-lg-4 {
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+  }
+  .col-lg-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+@media (max-width: 767px) {
+  .nav-wrapper {
+    padding: 10px 20px;
+  }
+  body.open {
+    height: 90vh;
+    overflow: hidden;
+  }
+  body.open .header {
+    z-index: 3;
+  }
+
+  .bar {
+    display: flex;
+  }
+  .menu-list {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    background: var(--dark);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+    transition: 0.5s;
+  }
+  body.open .menu-list {
+    display: flex;
+  }
+  .menu-list li {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  body.open .menu-list li {
+    animation: fadeIn 0.5s ease-in-out;
+    animation-fill-mode: both;
+  }
+
+  body.open .menu-list li:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  body.open .menu-list li:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+  body.open .menu-list li:nth-child(4) {
+    animation-delay: 0.6s;
+  }
+  body.open .menu-list li:nth-child(5) {
+    animation-delay: 0.8s;
+  }
+  body.open .menu-list li:nth-child(6) {
+    animation-delay: 1s;
+  }
+
+  .menu-list li a {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+  }
+  .menu-list .close {
+    display: flex;
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    cursor: pointer;
+    width: 45px;
+    height: 45px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+  }
+  .close span {
+    position: relative;
+    display: block;
+    height: 2px;
+    width: 22px;
+    background: #fff;
+    transform: rotate(45deg);
+  }
+  .close span:before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background: inherit;
+    left: 0;
+    left: 0;
+    transform: rotate(90deg);
+  }
+  .social-media a {
+    height: 35px;
+    width: 35px;
+    font-size: 1em;
+    margin-left: 5px;
+  }
+  .logo {
+    width: 150px;
+    margin-top: 10px;
+  }
+  .wrapper {
+    margin-top: 80px;
+  }
+  .sec-a-content {
+    width: 100%;
+  }
+  .sec-a-content .title {
+    font-size: 2em;
+  }
+  .sec-a-content .subtitle {
+    font-size: 20px;
+  }
+
+  .sec-b .about {
+    text-align: left;
+    padding: 4em 1em 2em;
+  }
+  .sec-b .sec-title h1 {
+    font-size: 2em;
+  }
+  .sec-b .sec-title span {
+    font-size: 2.5em;
+  }
+  .sec-b .service {
+    padding: 2em 1em 0;
+  }
+  .service .card {
+    margin-bottom: 1em;
+  }
+  .footer-form {
+    padding: 2em 1em;
+    grid-template-columns: 1fr;
+  }
+  #message {
+    grid-row: 3/4;
+    grid-column: 1/1;
+    height: 100px;
+  }
+  .filter-btn button {
+    margin: 0 5px;
+  }
+  .sec-c .card {
+    padding: 1em;
+  }
+  .footer-link {
+    grid-template-columns: 1fr;
+  }
+  .menu-link {
+    display: none;
+  }
+}
