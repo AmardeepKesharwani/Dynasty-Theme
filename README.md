@@ -10,6 +10,8 @@ This is a personal portfolio static theme
 * scroll js
 * speechSynthesis api
 
-
 ### view site
 [https://amardeepkesharwani.github.io/Dynasty-Theme/](https://amardeepkesharwani.github.io/Dynasty-Theme/)
+
+
+![dynasty](https://amardeepkesharwani.github.io/Dynasty-Theme/img/dynasty.jpg)
